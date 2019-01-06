@@ -4,7 +4,7 @@ public class Earthquake {
     private String mPlace;
     private String mMag;
     private String mDate;
-    public Earthquake(String ePlace, String eMag, String eDate)
+    public Earthquake(String eMag, String ePlace, String eDate)
     {
         mPlace = ePlace;
         mMag = eMag;
