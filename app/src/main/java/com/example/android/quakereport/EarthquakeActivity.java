@@ -139,6 +139,8 @@ public class EarthquakeActivity extends AppCompatActivity {
          */
         @Override
         protected void onPostExecute(List<Earthquake> data) {
+            View loadingIndicator = findViewById(R.id.loading_indicator);
+            loadingIndicator.setVisibility(View.GONE);
             // Clear the adapter of previous earthquake data
             mAdapter.clear();
 
